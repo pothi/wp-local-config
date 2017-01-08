@@ -8,6 +8,9 @@ define('DB_USER', 'db_user');
 define('DB_PASSWORD', 'db_password');
 define('DB_HOST', 'localhost');
 
+// MEDIA URL (required) to fetch wp-content/uploads file on-the-fly
+define('WPLT_MEDIA_FROM_PROD_URL', 'http://example.com/');
+
 /* End of Variables */
 
 /*
