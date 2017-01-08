@@ -46,6 +46,7 @@ define('WP_SITEURL', $wplt_protocol . $wplt_domain);
 
 define('WPLT_DISABLED_PLUGINS', serialize(
     array(
+        'batcache/batcache.php',
         'wp-super-cache/wp-cache.php',
         'w3-total-cache/w3-total-cache.php',
         'varnish-http-purge/varnish-http-purge.php',
