@@ -1,12 +1,30 @@
 <?php
 
+$table_prefix  = 'wp_';
+
+/* local-config.php SHOULD contain at least the following information...
+ * DB_NAME, DB_USER, DB_PASSWORD, DB_HOST and Authentication Unique Keys and Salts
+ */
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
-    # define( 'WP_LOCAL_DEV', true );
-    define( 'WPLT_SERVER', 'dev' );
     include( dirname( __FILE__ ) . '/local-config.php' );
-} else {
-    define('DB_NAME', 'prod_db_name');
-    define('DB_USER', 'prod_db_user');
-    define('DB_PASSWORD', 'prod_db_password');
-    define('DB_HOST', 'prod_db_host');
 }
+
+if ( !defined('DB_CHARSET') ) define('DB_CHARSET', 'utf8');
+if ( !defined('DB_COLLATE') ) define('DB_COLLATE', '');
+if ( !defined('WPLANG') ) define('WPLANG', '');
+if ( !defined('WP_DEBUG') ) define('WP_DEBUG', false);
+
+if (WP_DEBUG) {
+	define('WP_DEBUG_LOG', true);
+	define('WP_DEBUG_DISPLAY', false);
+	@ini_set('display_errors',0);
+}
+
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');

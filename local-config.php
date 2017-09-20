@@ -9,7 +9,28 @@ define('DB_PASSWORD', 'db_password');
 define('DB_HOST', 'localhost');
 
 // MEDIA URL (required) to fetch wp-content/uploads file on-the-fly
-define('WPLT_MEDIA_FROM_PROD_URL', 'http://example.com/');
+// define('WPLT_MEDIA_FROM_PROD_URL', 'http://example.com/');
+
+# define( 'WP_LOCAL_DEV', true );
+// define( 'WPLT_SERVER', 'dev' );
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 
 /* End of Variables */
 
@@ -18,13 +39,13 @@ define('WPLT_MEDIA_FROM_PROD_URL', 'http://example.com/');
  * Still good to know / understand what's going on
  */
 
+define('WPLT_ROBOTS', 'noindex');
+
+$wplt_protocol = 'http://';
 $wplt_domain = $_SERVER['HTTP_HOST'];
 // for Browser Sync
 // $wplt_domain = "$_SERVER['HTTP_HOST']:2000";
 
-define('WPLT_ROBOTS', 'noindex');
-
-$wplt_protocol = 'http://';
 if (isset($_SERVER['HTTPS']) &&
     ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) ||
     isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
