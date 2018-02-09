@@ -12,7 +12,7 @@ define('DB_HOST', 'localhost');
 // define('WPLT_MEDIA_FROM_PROD_URL', 'http://example.com/');
 
 # define( 'WP_LOCAL_DEV', true );
-// define( 'WPLT_SERVER', 'dev' );
+define( 'WPLT_SERVER', 'local' );
 
 /**#@+
  * Authentication Unique Keys and Salts.
