@@ -72,21 +72,21 @@ define('WPLT_DISABLED_PLUGINS', serialize(
         'wp-super-cache/wp-cache.php',
         'w3-total-cache/w3-total-cache.php',
         'varnish-http-purge/varnish-http-purge.php',
-        
+
         'google-sitemap-generator/sitemap.php',
         'bwp-google-xml-sitemaps/bwp-simple-gxs.php',
         'html-sitemap/html-sitemap.php',
 
         'wordpress-seo/wp-seo.php',
         'autodescription/autodescription.php',
-        
+
         'vaultpress/vaultpress.php',
         'backup/backup.php',
         'backupwordpress/backupwordpress.php',
         'updraftplus/updraftplus.php',
-        
-        'wp-piwik/wp-piwik.php',
 
+        'wp-piwik/wp-piwik.php',
+        'force-strong-passwords/slt-force-strong-passwords.php',
         'simple-history/index.php'
     )
 ));
