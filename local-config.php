@@ -87,6 +87,13 @@ define('WPLT_DISABLED_PLUGINS', serialize(
 
         'wp-piwik/wp-piwik.php',
         'force-strong-passwords/slt-force-strong-passwords.php',
-        'simple-history/index.php'
+        'simple-history/index.php',
+
+        'preload-fullpage-cache/preload-fullpage-cache.php',
+        'imagify/imagify.php'
     )
 ));
+
+/* Jetpack specific configs; use only one */
+define( 'JETPACK_STAGING_MODE', true );
+// define( 'JETPACK_DEV_DEBUG', true );
