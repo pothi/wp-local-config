@@ -19,6 +19,7 @@ define( 'WPLT_SERVER', 'local' );
  *
  * Change these to different unique phrases!
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can generate these using the command `curl -L tinywp.in/salt`
  * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
  *
  * @since 2.6.0
@@ -42,14 +43,14 @@ define('NONCE_SALT',       'put your unique phrase here');
 define('WPLT_ROBOTS', 'noindex');
 
 $wplt_protocol = 'http://';
-$wplt_domain = $_SERVER['HTTP_HOST'];
-// for Browser Sync
-// $wplt_domain = "$_SERVER['HTTP_HOST']:2000";
+$wplt_domain = '';
 
-if (isset($_SERVER['HTTPS']) &&
-    ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) ||
-    isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
-    $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+if( isset($_SERVER['HTTP_HOST']) ) $wplt_domain = $_SERVER['HTTP_HOST'];
+
+if (
+	(isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1)) ||
+    (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+	) {
   $wplt_protocol = 'https://';
 }
 
