@@ -11,8 +11,11 @@ define('DB_HOST', 'localhost');
 // MEDIA URL (required) to fetch wp-content/uploads file on-the-fly
 define('WPLT_MEDIA_FROM_PROD_URL', 'https://example.com/');
 
-# define( 'WP_LOCAL_DEV', true );
-define( 'WPLT_SERVER', 'local' );
+// define( 'WP_LOCAL_DEV', true );
+
+// choose anyone of the following
+// define( 'WPLT_SERVER', 'local' );
+define( 'WPLT_SERVER', 'staging' );
 
 /**#@+
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
