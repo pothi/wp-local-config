@@ -9,7 +9,7 @@ define('DB_PASSWORD', 'db_password');
 define('DB_HOST', 'localhost');
 
 // MEDIA URL (required) to fetch wp-content/uploads file on-the-fly
-// define('WPLT_MEDIA_FROM_PROD_URL', 'http://example.com/');
+define('WPLT_MEDIA_FROM_PROD_URL', 'https://example.com/');
 
 # define( 'WP_LOCAL_DEV', true );
 define( 'WPLT_SERVER', 'local' );
@@ -48,9 +48,9 @@ $wplt_domain = '';
 if( isset($_SERVER['HTTP_HOST']) ) $wplt_domain = $_SERVER['HTTP_HOST'];
 
 if (
-	(isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1)) ||
+    (isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1)) ||
     (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
-	) {
+    ) {
   $wplt_protocol = 'https://';
 }
 
