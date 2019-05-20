@@ -15,14 +15,8 @@ define('WPLT_MEDIA_FROM_PROD_URL', 'https://example.com/');
 define( 'WPLT_SERVER', 'local' );
 
 /**#@+
- * Authentication Unique Keys and Salts.
- *
- * Change these to different unique phrases!
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can generate these using the command `curl -L tinywp.in/salt`
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
- *
- * @since 2.6.0
+ * You can generate these using the command `curl -L tinywp.in/salt | pbcopy`
  */
 define('AUTH_KEY',         'put your unique phrase here');
 define('SECURE_AUTH_KEY',  'put your unique phrase here');
@@ -73,6 +67,7 @@ define('WPLT_DISABLED_PLUGINS', serialize(
         'wp-super-cache/wp-cache.php',
         'w3-total-cache/w3-total-cache.php',
         'varnish-http-purge/varnish-http-purge.php',
+        'wp-fastest-cache/wpFastestCache.php',
 
         'google-sitemap-generator/sitemap.php',
         'bwp-google-xml-sitemaps/bwp-simple-gxs.php',
