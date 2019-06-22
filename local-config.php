@@ -89,7 +89,8 @@ define('WPLT_DISABLED_PLUGINS', serialize(
         'simple-history/index.php',
 
         'preload-fullpage-cache/preload-fullpage-cache.php',
-        'imagify/imagify.php'
+        'imagify/imagify.php',
+        'minify-html-markup/minify-html.php'
     )
 ));
 
