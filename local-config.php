@@ -77,6 +77,7 @@ define('WPLT_DISABLED_PLUGINS', serialize(
         'html-sitemap/html-sitemap.php',
 
         'wordpress-seo/wp-seo.php',
+        'wpseo-news/wpseo-news.php',
         'autodescription/autodescription.php',
 
         'vaultpress/vaultpress.php',
