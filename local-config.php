@@ -71,6 +71,7 @@ define('WPLT_DISABLED_PLUGINS', serialize(
         'w3-total-cache/w3-total-cache.php',
         'varnish-http-purge/varnish-http-purge.php',
         'wp-fastest-cache/wpFastestCache.php',
+        'sg-cachepress/sg-cachepress.php',
 
         'google-sitemap-generator/sitemap.php',
         'bwp-google-xml-sitemaps/bwp-simple-gxs.php',
