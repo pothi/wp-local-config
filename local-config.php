@@ -96,7 +96,7 @@ define('WPLT_DISABLED_PLUGINS', serialize(
     )
 ));
 
-/* Jetpack specific configs; use only one */
+/* Jetpack specific configs; use only one; last definition takes precedence */
 define( 'JETPACK_STAGING_MODE', true );
 // to disable photon (site accelerator), among others
 // https://jetpack.com/2016/04/07/using-jetpack-for-client-sites/
