@@ -17,19 +17,6 @@ define('WPLT_MEDIA_FROM_PROD_URL', 'https://example.com/');
 // define( 'WPLT_SERVER', 'local' );
 define( 'WPLT_SERVER', 'staging' );
 
-/**#@+
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can generate these using the command `curl -L tinywp.in/salt | pbcopy`
- */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
 /* End of Variables */
 
 /*
