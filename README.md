@@ -12,6 +12,7 @@ For a more detailed explanation of the whole repo and its background, please see
 - Edit local-config.php file and update the database credentials that you created for the dev site.
 - Import the database dump (from production site).
 - Fetch the latest version of [WP Local Toolbox](https://github.com/joeguilmette/wp-local-toolbox) and place it in wp-content/mu-plugins directory.
+- Install [BE Media from Production](wp plugin install https://github.com/billerickson/be-media-from-production/archive/master.zip --force --activate) plugin via wp-cli.
 - Browser your dev / staging / test site.
 
 ## Post Installation Steps

@@ -9,7 +9,7 @@ define('DB_PASSWORD', 'db_password');
 define('DB_HOST', 'localhost');
 
 // MEDIA URL (required) to fetch wp-content/uploads file on-the-fly
-define('WPLT_MEDIA_FROM_PROD_URL', 'https://example.com/');
+define('BE_MEDIA_FROM_PRODUCTION_URL', 'https://example.com/');
 
 // define( 'WP_LOCAL_DEV', true );
 
